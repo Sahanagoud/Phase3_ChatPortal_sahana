@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="a">LOGIN TO CHAT PORTAL</div>
+<form #loginForm="ngForm" (ngSubmit)="login()" class ="form">
+  <div class="mb-3">
+    <label for="username" class="form-label">User Name :</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username" [(ngModel)]="username" name="username" required>
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label" >Password : </label>
+    <input type="password" id="password" placeholder="Enter Password" [(ngModel)]="password" name="password" required>
+  </div>
+  <button type="submit" class="btn btn-primary mb-3 ">Login</button>
+</form>
+

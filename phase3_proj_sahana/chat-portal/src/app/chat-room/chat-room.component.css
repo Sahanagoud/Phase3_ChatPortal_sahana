@@ -1,0 +1,28 @@
+.container{
+    background-color:rgb(161, 198, 244);
+    width: 30%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-content: center;
+    text-align: center;
+    align-self:center;
+ }
+ .a{
+    text-align: center;
+    font-size:larger;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.chat{
+    text-align: center;
+    font-size:larger;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+}
+
+a:link {color:#0000ff;}
+a:visited {color:#0000ff;}
+a:hover {font-size:150%;}

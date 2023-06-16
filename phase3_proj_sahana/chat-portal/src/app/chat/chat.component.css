@@ -1,0 +1,54 @@
+  .a{
+    left:20%;
+    width:fit-content;
+    height:fit-content;
+    align-self: center;
+    align-content: center;
+    padding:10px;
+  }
+  .chat-c{
+
+    align-content: center;
+  }
+  .chat{
+    
+    height: 100%;
+    
+  }
+  .container{
+    top:50px;
+    padding-left: 150px;
+    
+    border:0;
+    align-content: center;
+    align-self: center;
+    height: fit-content;
+   text-align: center;
+    position: static;
+    position: fixed;
+ }
+ ul {
+    list-style-type: none;
+}
+ 
+ .column {
+    align-content: center;
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding: 10px;
+  
+  }
+  .p{
+    
+       left:50;
+        background-color: rgb(142, 142, 192);
+        width:80%;
+        position: relative;
+    
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

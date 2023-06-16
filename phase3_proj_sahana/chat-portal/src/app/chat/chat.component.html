@@ -1,0 +1,51 @@
+
+<div class="row">
+  <div class="column">
+<div class="container" w3-centered>
+  
+    <div *ngIf="loggedIn" class="w3-card-4 w3-dark-grey a" >
+     
+      <h6>Welcome, {{ username }}!</h6>
+      <h6>Chat Room: {{ room }}</h6>
+      <div class="w3-section">
+      <button class="w3-button w3-green" (click)="leaveChatRoom()">Leave Chat Room</button>
+      <button class="w3-button w3-red" (click)="logout()">Logout</button>
+      </div>
+    </div>
+
+    <div class="b">
+        <div class="w3-third w3-center">
+            <h6> Joined Users</h6>
+            <ul>
+              <li *ngFor="let user of joinedUsers">{{ user }}</li>
+            </ul>
+          <!--<div *ngIf = "newJoinedUser">
+            <p>New User Joined  {{newJoinedUser}}</p>
+          </div>-->
+          <div *ngIf = "userleft">
+            <p>{{userleft}} Left the room</p>
+          </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!loggedIn">
+  <h2>Please log in to view the chat room.</h2>
+</div>
+</div>
+<div class="chat column ">
+  <div class="chat-c">
+    <div class="messages">
+      <div *ngFor="let message of chatMessages" >
+        <p ><strong>{{ message.user }}</strong>:  <a >{{ message.content }} </a> </p>
+        <p class="timestamp">{{ message.timestamp | date: 'yyyy-MM-dd HH:mm:ss' }}</p>
+        
+      </div>
+    </div>   
+    <form (submit)="sendMessage()">
+      <input type="text" name = "messageContent" placeholder="Type your message" [(ngModel)]="messageContent" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</div>
+</div>

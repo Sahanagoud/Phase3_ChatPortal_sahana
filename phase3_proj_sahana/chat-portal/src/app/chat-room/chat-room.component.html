@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="a">Chat Rooms</div>
+  <div class="chat">
+    <ul>
+      <li *ngFor="let room of chatRooms">
+        <a [routerLink]="['/chat', room]" (click)="connectToChatRoom(room)">{{ room }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
